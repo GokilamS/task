@@ -1,5 +1,5 @@
 <h1>SignUp Page</h1>
-<%= form_with scope: :signup, url: articles_path, local: true do |form| %>
+<%= form_with scope: :signup, url: articles_path, local: true do |form| %> 
 <p>
     <%= form.label :UserName%><br>
     <%= form.text_field :UserName %>
@@ -12,11 +12,11 @@
  
   <p>
     <%= form.label :Password%><br>
-    <%= form.text_field :Password %>
+    <%= form.password_field:Password %>
   </p>
  <p>
     <%= form.label :ConfirmPassword%><br>
-    <%= form.text_field :ConfirmPassword %>
+    <%= form.password_field :ConfirmPassword %>
   </p>
   <p class="button">
     <%= form.submit %>
